@@ -1,4 +1,4 @@
-import { formatCurrency } from "../utils/currency";
+import { formatCurrency } from "../utils/Currency";
 import { useCart } from "../context/CartContext";
 import { ShoppingCart, Minus, Plus, Check } from "lucide-react";
 import toast from "react-hot-toast";
