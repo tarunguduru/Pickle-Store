@@ -5,14 +5,13 @@ Products are fetched from **MockAPI**, and the app is designed with **responsive
 
 ## Table of Contents
 
-- [Features](#-features)
-- [Tech Stack](#-tech-stack)
-- [Setup & Run Locally](#-setup--run-locally)
-- [Future Enhancements](#-future-enhancements)
-- [Screenshots](#-screenshots-optional)
-- [License](#-license)
+- [Features](#features)
+- [Tech Stack](#tech-stack)
+- [Setup & Run Locally](#setup--run-locally)
+- [Future Enhancements](#future-enhancements)
+- [Screenshots](#screenshots)
 
-## Features
+## features
 
 ### 1. Product Listing
 
@@ -37,7 +36,7 @@ Products are fetched from **MockAPI**, and the app is designed with **responsive
 - **Dark mode toggle** (Tailwind `dark:` classes)
 - Mobile, tablet, and desktop responsive
 
-## Tech Stack
+## tech-stack
 
 - React (functional components + hooks)
 - Tailwind CSS (dark mode, responsive design)
@@ -46,7 +45,7 @@ Products are fetched from **MockAPI**, and the app is designed with **responsive
 - React Context API + useReducer (state management)
 - React Hot Toast / Sonner (notifications)
 
-## Setup & Run Locally
+## setup--run-locally
 
 ### 1. Clone the repository
 
@@ -61,13 +60,13 @@ Products are fetched from **MockAPI**, and the app is designed with **responsive
 
 - npm run dev
 
-## Future Enhancements
+## future-enhancements
 
 - Authentication → User login/signup with JWT or Firebase Auth
 - Wishlist / Favorites → Save items for later purchase
 - Checkout flow → Add address, payment, and order confirmation
 - Backend Integration → Replace MockAPI with Node.js/Express or serverless backend
 
-### Screenshots
+### screenshots
 
 - Yet to upload
