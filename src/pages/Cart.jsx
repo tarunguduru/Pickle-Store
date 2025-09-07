@@ -1,5 +1,5 @@
 import { useCart } from "../context/CartContext";
-import { formatCurrency } from "../utils/currency";
+import { formatCurrency } from "../utils/Currency";
 import toast from "react-hot-toast";
 
 export default function Cart() {
