@@ -1,12 +1,73 @@
-# React + Vite
+# Pickle Store (React + Tailwind)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple e-commerce web application built with **React** and **Tailwind CSS**, featuring product listing, search & filter, cart management, and dark mode support.  
+Products are fetched from **MockAPI**, and the app is designed with **responsive UI/UX** and modern Tailwind-first styling.
 
-Currently, two official plugins are available:
+## Table of Contents
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Setup & Run Locally](#-setup--run-locally)
+- [Future Enhancements](#-future-enhancements)
+- [Screenshots](#-screenshots-optional)
+- [License](#-license)
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Product Listing
+
+- Fetch products (name, price, image, category) from MockAPI
+- Responsive product grid layout with Tailwind
+
+### 2. Search & Filter
+
+- Search products by name
+- Filter by category (**Veg, Non-Veg, Groceries**)
+- Sort products by price (low → high, high → low)
+
+### 3. Cart Management
+
+- Add/remove items to/from cart
+- Update item quantities
+- Cart total calculation (subtotal, tax, total)
+- Cart persistence with **localStorage**
+
+### 4. User Features
+
+- **Dark mode toggle** (Tailwind `dark:` classes)
+- Mobile, tablet, and desktop responsive
+
+## Tech Stack
+
+- React (functional components + hooks)
+- Tailwind CSS (dark mode, responsive design)
+- MockAPI (for product data)
+- LocalStorage (persistence)
+- React Context API + useReducer (state management)
+- React Hot Toast / Sonner (notifications)
+
+## Setup & Run Locally
+
+### 1. Clone the repository
+
+- git clone https://github.com/tarunguduru/Pickle-Store.git
+- cd pickle-store
+
+### 2. Install dependencies
+
+- npm install
+
+### 3. Start the devolopment server
+
+- npm run dev
+
+## Future Enhancements
+
+- Authentication → User login/signup with JWT or Firebase Auth
+- Wishlist / Favorites → Save items for later purchase
+- Checkout flow → Add address, payment, and order confirmation
+- Backend Integration → Replace MockAPI with Node.js/Express or serverless backend
+
+### Screenshots
+
+- Yet to upload
