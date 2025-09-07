@@ -2,7 +2,7 @@ import { createContext, useContext, useReducer, useEffect } from "react";
 
 const CartContext = createContext();
 
-const initialState = { items: [] }; // each { id, name, image, priceAtAdd, qty }
+const initialState = { items: [] };
 
 function init(initial) {
   try {
@@ -58,7 +58,6 @@ function reducer(state, action) {
 export function CartProvider({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState, init);
 
-  // persist whenever state changes
   useEffect(() => {
     localStorage.setItem("cart", JSON.stringify(state));
   }, [state]);

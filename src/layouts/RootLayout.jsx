@@ -15,7 +15,7 @@ export default function RootLayout() {
       <header className="sticky top-0 z-10 bg-white/70 dark:bg-slate-900/70 backdrop-blur border-b border-slate-200 dark:border-slate-800">
         <div className="container mx-auto px-4 py-3 flex items-center justify-between">
           <Link to="/" className="text-xl font-semibold">
-            🥒 Pickel Store
+            Pickel Store
           </Link>
           <nav className="flex items-center gap-2">
             <NavLink

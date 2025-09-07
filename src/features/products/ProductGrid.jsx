@@ -83,7 +83,7 @@ export default function ProductGrid() {
         </div>
       ) : (
         <div className="text-center py-16 text-slate-500 dark:text-slate-400">
-          No products found 🥒
+          No products found
         </div>
       )}
     </div>

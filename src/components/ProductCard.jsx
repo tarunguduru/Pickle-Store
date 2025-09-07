@@ -10,8 +10,7 @@ export default function ProductCard({ product }) {
   const inc = () => updateQty(product.id, qty + 1);
   const dec = () => {
     if (qty <= 1) {
-      // if user tries to go below 1, remove it from cart completely
-      updateQty(product.id, 0); // we'll handle qty=0 as remove
+      updateQty(product.id, 0);
     } else {
       updateQty(product.id, qty - 1);
     }
@@ -41,7 +40,6 @@ export default function ProductCard({ product }) {
             {formatCurrency(product.price)}
           </span>
 
-          {/* Right-side CTA */}
           {!inCart ? (
             <button
               onClick={() => {

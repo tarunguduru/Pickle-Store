@@ -7,7 +7,7 @@ function mapProduct(p) {
     name: p.name,
     price: Number(p.price) ?? 0,
     image: p.imgUrl,
-    category: p.category, // 'veg' | 'non-veg' | 'groceries'
+    category: p.category,
     ingredients:
       typeof p.ingredients === "string"
         ? p.ingredients

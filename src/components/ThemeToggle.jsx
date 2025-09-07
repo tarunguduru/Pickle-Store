@@ -1,10 +1,8 @@
 import { useEffect, useState } from "react";
 
 const getInitialTheme = () => {
-  // localStorage first
   const saved = localStorage.getItem("theme");
   if (saved === "light" || saved === "dark") return saved;
-  // then system preference
   const prefersDark = window.matchMedia?.(
     "(prefers-color-scheme: dark)"
   )?.matches;
