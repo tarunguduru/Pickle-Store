@@ -69,4 +69,6 @@ Products are fetched from **MockAPI**, and the app is designed with **responsive
 
 ### screenshots
 
-- Yet to upload
+![App Screenshot](src/assets/Home_Page.png)
+
+![App Screenshot](src/assets/Cart_Page.png)
