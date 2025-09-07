@@ -23,7 +23,7 @@ export default function RootLayout() {
               to="/"
               className="text-xl font-semibold text-zinc-900 dark:text-zinc-100"
             >
-              Pickel Store
+              Pickle Store
             </Link>
           </div>
 
@@ -73,7 +73,7 @@ export default function RootLayout() {
 
       <footer className="border-t border-slate-200 dark:border-zinc-800 bg-slate-100 dark:bg-zinc-950 py-6 mt-12 text-center text-sm">
         <p className="text-slate-600 dark:text-zinc-400">
-          © {new Date().getFullYear()} Pickel Store · Have queries? Reach us at{" "}
+          © {new Date().getFullYear()} Pickle Store · Have queries? Reach us at{" "}
           <a
             href="mailto:gudurutarun@gmail.com"
             className="text-emerald-600 dark:text-emerald-400 hover:underline"
