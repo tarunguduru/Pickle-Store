@@ -1,10 +1,17 @@
 import { useEffect, useState, useMemo } from "react";
-import { fetchProducts } from "../../api/products";
+import { fetchProducts } from "../../api/Products";
 import ProductCard from "../../components/ProductCard";
 import FilterBar from "./FilterBar";
 
 function CardSkeleton() {
-  /* keep as is */
+  return (
+    <div className="rounded-xl border border-zinc-200 dark:border-zinc-800 p-4 animate-pulse bg-white dark:bg-zinc-900">
+      <div className="h-40 w-full rounded-lg bg-zinc-200 dark:bg-zinc-800" />
+      <div className="mt-4 h-4 w-2/3 rounded bg-zinc-200 dark:bg-zinc-800" />
+      <div className="mt-2 h-4 w-1/3 rounded bg-zinc-200 dark:bg-zinc-800" />
+      <div className="mt-4 h-9 w-full rounded-lg bg-zinc-200 dark:bg-zinc-800" />
+    </div>
+  );
 }
 
 export default function ProductGrid() {
@@ -21,7 +28,11 @@ export default function ProductGrid() {
         if (mounted) setState({ loading: false, error: "", items });
       } catch (e) {
         if (mounted)
-          setState({ loading: false, error: e.message || "Error", items: [] });
+          setState({
+            loading: false,
+            error: e.message || "Error",
+            items: [],
+          });
       }
     })();
     return () => {
@@ -64,7 +75,11 @@ export default function ProductGrid() {
   }
 
   if (state.error) {
-    /* keep existing error UI */
+    return (
+      <div className="rounded-lg border border-red-300 bg-red-50 p-4 text-red-800 dark:border-red-900 dark:bg-red-950 dark:text-red-300">
+        {state.error}
+      </div>
+    );
   }
 
   return (
@@ -82,7 +97,7 @@ export default function ProductGrid() {
           ))}
         </div>
       ) : (
-        <div className="text-center py-16 text-slate-500 dark:text-slate-400">
+        <div className="text-center py-16 text-zinc-500 dark:text-zinc-400">
           No products found
         </div>
       )}
