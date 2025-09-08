@@ -3,6 +3,8 @@
 A simple e-commerce web application built with **React** and **Tailwind CSS**, featuring product listing, search & filter, cart management, and dark mode support.  
 Products are fetched from **MockAPI**, and the app is designed with **responsive UI/UX** and modern Tailwind-first styling.
 
+Live: https://pickles-store.netlify.app/
+
 ## Table of Contents
 
 - [Features](#features)
